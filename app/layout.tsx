@@ -35,7 +35,6 @@ export default function RootLayout({
         <Link href={'/space'} className={'text-xl text-black'}>오프라인</Link>
         <Link href={'/about'} className={'text-xl text-black'}>구매하기</Link>
         <Link href={'/faq'} className={'text-xl text-black'}>문의</Link>
-        <Link href={'/notice'} className={'text-xl text-black'}>공지</Link>
         <Link href={'http://barhyo-village.com/'} className={'text-xl text-black'}>365발효醱酵마을</Link>
       </div>
     </div>
