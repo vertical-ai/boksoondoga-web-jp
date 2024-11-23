@@ -40,6 +40,56 @@ export default function RootLayout({
       </div>
     </div>
     {children}
+    <div className={'flex py-10 text-black opacity-50 text-sm'}>
+      <div className="mx-auto items-center flex flex-col">
+        <div>
+          <ul>
+            <li><a href="https://www.instagram.com/boksoondoga/" target="_blank" title="인스타그램"
+                   className="instagram"></a></li>
+            <li><a href="https://smartstore.naver.com/boksoondoga" target="_blank" title="네이버" className="naver"></a>
+            </li>
+            <li><a href="https://pf.kakao.com/_xjxbxhtxl" target="_blank" title="카카오플러스친구" className="kakaoplus"></a>
+            </li>
+            <li><a href="http://twitter.com/boksoondoga" target="_blank" title="트위터" className="twitter"></a></li>
+          </ul>
+        </div>
+        <div className='flex gap-2 my-5'>
+          <Link href="/company" className={'text-black  '}>Company</Link>
+          <Link href="/agreement.html" className={'text-black  '}>Agreement</Link>
+          <Link href="/privacy.html" className={'text-black '}>Privact Policy</Link>
+          <Link href="/guide.html" className={'text-black '}>Guide</Link>
+        </div>
+        <div className={'flex flex-col text-center gap-2'}>
+          <div className='flex flex-col gap-1'>
+            <div>
+              <span className="name">농업회사법인 복순도가 주식회사 </span>
+              <span><strong>대표자(성명)</strong>김정식</span>
+            </div>
+            <span>44903 울산광역시 울주군 상북면 향산동길 48 </span>
+            <span><strong>사업자등록번호</strong>161-87-02134</span>
+            <div>
+
+           <span><strong>통신판매업신고</strong> 제2015-울산울주-0164호
+           </span>
+              <span><strong>전화</strong>1577-6746</span>
+              <span><strong>팩스</strong>052-264-3539</span>
+            </div>
+            <div>
+
+              <span className=""><strong>이메일</strong><a
+                href="mailto:boksoondoga@gmail.com">boksoondoga@gmail.com</a></span>
+              <span className=""><strong>개인정보관리책임자</strong><a
+                href="mailto:boksoondoga@gmail.com">김정식(boksoondoga@gmail.com)</a></span></div>
+          </div>
+          <div className="copyright">© 2020 <strong>복순도가</strong>. All rights reserved.</div>
+          <br/><br/><a href="https://iniweb.inicis.com/popup/common/popup_escrow_notice.jsp?mid=ECAboks58b"
+                       target="_blank"><img
+          src="https://cafe24.poxo.com/ec01/boksoondoga/EjglQcnyYl9oLKpqUS6wZqtFhens0mdFm0IkD7i0ZZvOpcYGgStAmfKXXiXsrOYPtaPmFrVfWK+mjSrv6zq0qA==/_/img/escrow_218x50_gray.png"
+          width="218" height="50" className='cursor-pointer border-0'/></a>
+          <br/>
+        </div>
+      </div>
+    </div>
     </body>
     </html>
   );
