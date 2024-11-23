@@ -1,101 +1,84 @@
 import Image from "next/image";
+import Link  from "next/link";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className={'h-full flex flex-col touch-none transition duration-700 transform  '}>
+      <div className="h-[1270px] relative">
+        <div className="flex h-[1270px]">
+          <video id="mainMP4" autoPlay muted loop
+                 className={'absolute top-50 left-50 w-auto h-full object-cover min-w-[100vw] min-h-[100vh] z-[-1000] overflow-hidden'}>
+            <source
+              src="https://player.vimeo.com/progressive_redirect/playback/512784548/rendition/1080p/file.mp4?loc=external&amp;log_user=0&amp;signature=2afb339fb8023d7672e3b86ee5be908f9303eec4cc1176a817b6e1eecacb89aa"
+              type="video/mp4"/>
+          </video>
+          <div
+            className="absolute text-center z-4 left-1/2 top-1/2 text-white -translate-x-1/2 -translate-y-1/2 flex flex-col gap-4">
+            <strong className={'text-4xl'}>사람을 노래하게 하는<br/>아름답고 하얀 빛의 오브제,<br/>복순도가 손막걸리</strong>
+            <p className={'block text-3xl text-black font-bold opacity-50'}>Pure.<br/>Non-pasteurized.<br/>Hand-brewed.
+            </p>
+            <Link href="/"
+                  className={'inline-block mx-auto text-base text-white font-bold border border-white py-4 px-5 font-roboto-condensed'}>about</Link>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+      </div>
+      <div className="h-[1270px] relative">
+        <div className="flex h-[1270px]">
           <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+            src={'/images/main2.jpg'}
+            width={1920}
+            height={1080}
+            className={'absolute top-50 left-50 w-auto h-full object-cover min-w-[100vw] min-h-[100vh] z-[-1000] overflow-hidden'}
+            alt={''}/>
+          <div
+            className="absolute text-center z-4 left-1/2 top-1/2 text-white -translate-x-1/2 flex flex-col gap-4">
+            <strong className={'text-4xl'}>양조장에서 집 앞까지 찾아오는<br/>복순도가 전통주,<br/>단 한 번의 신청으로 간편하게!</strong>
+            <p className={'block text-3xl text-black font-bold opacity-50'}>Fresh Hand-brewed.<br/>Ongoing Subscription.<br/><br/>(정기구독
+              서비스 준비중 입니다.)</p>
+            <Link href="/"
+                  className={'inline-block mx-auto text-base text-white font-bold border border-white py-4 px-5 font-roboto-condensed'}>Subscription</Link>
+          </div>
+        </div>
+      </div>
+      <div className="h-[1270px] relative">
+        <div className="flex h-[1270px]">
           <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+            src={'/images/main3.jpg'}
+            width={1920}
+            height={1080}
+            className={'absolute top-50 left-50 w-auto h-full object-cover min-w-[100vw] min-h-[100vh] z-[-1000] overflow-hidden'}
+            alt={''}/>
+          <div
+            className="absolute text-center z-4 left-1/2 top-1/2 text-white -translate-x-1/2 flex flex-col gap-4">
+            <strong className={'text-4xl'}>A feast for the living, breathing yeast.<br/>Boksoondoga Rice Wine sticks
+              to<br/>the traditional
+              brewing methods.</strong>
+            <p className={'block text-3xl text-black font-bold opacity-50'}>
+              기다림과 정성으로 백미白眉를 빚어내는 복순도가.<br/>복순도가의 다양한 제품을<br/>온라인 주문으로 손쉽게 만나보세요!
+            </p>
+            <Link href="/"
+                  className={'inline-block mx-auto text-base text-white font-bold border border-white py-4 px-5 font-roboto-condensed'}>Store</Link>
+          </div>
+        </div>
+      </div>
+      <div className="h-[1270px] relative">
+        <div className="flex h-[1270px]">
           <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+            src={'/images/main4.jpg'}
+            width={1920}
+            height={1080}
+            className={'absolute top-50 left-50 w-auto h-full object-cover min-w-[100vw] min-h-[100vh] z-[-1000] overflow-hidden'}
+            alt={''}/>
+          <div
+            className="absolute text-center z-4 left-1/2 top-1/2 text-white -translate-x-1/2 flex flex-col gap-4">
+            <strong className={'text-4xl'}>손수 빚어 느끼는<br/>막걸리의 맛.</strong>
+            <p className={'block text-3xl text-black font-bold opacity-50'}>직접 빚고 마시는 특별한 경험!<br/>복순도가와 함께하는<br/>발효 막걸리
+              체험 클래스</p>
+            <Link href="/"
+                  className={'inline-block mx-auto text-base text-white font-bold border border-white py-4 px-5 font-roboto-condensed'}>Experience</Link>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

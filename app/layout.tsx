@@ -1,17 +1,7 @@
-import type { Metadata } from "next";
-import localFont from "next/font/local";
+import type {Metadata} from "next";
 import "./globals.css";
-
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+import Image           from "next/image";
+import Link            from "next/link";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -19,17 +9,38 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({
-  children,
-}: Readonly<{
+                                     children,
+                                   }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
-      </body>
+    <body
+      className={`overflow-y-scroll overflow-x-hidden h-full bg-white`}
+    >
+
+    <div className="fixed left-0 top-0 w-screen px-[60px] py-[30px] box-border z-[100] flex">
+      <div className="header-logo">
+        <h1 className="xans-element- xans-layout xans-layout-logotop ">
+          <Link href="/">
+            <Image
+              src={"/images/logo.jpg"}
+              height={40}
+              width={238}
+              alt="복순도가"/></Link>
+        </h1>
+      </div>
+      <div className="flex gap-4 items-center mx-auto">
+        <Link href={'/about'} className={'text-xl text-black'}>복순도가</Link>
+        <Link href={'/space'} className={'text-xl text-black'}>오프라인</Link>
+        <Link href={'/about'} className={'text-xl text-black'}>구매하기</Link>
+        <Link href={'/faq'} className={'text-xl text-black'}>문의</Link>
+        <Link href={'/notice'} className={'text-xl text-black'}>공지</Link>
+        <Link href={'http://barhyo-village.com/'} className={'text-xl text-black'}>365발효醱酵마을</Link>
+      </div>
+    </div>
+    {children}
+    </body>
     </html>
   );
 }
