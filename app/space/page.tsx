@@ -1,6 +1,4 @@
-import VimeoPlayer from "@/app/components/VimeoPlayer";
-import Image       from "next/image";
-import Link        from "next/link";
+import Image from "next/image";
 
 export default function Page() {
   return (
@@ -42,11 +40,11 @@ export default function Page() {
       </div>
       <div className={'flex justify-center text-white h-[600px] '}>
         <div className={'relative w-full h-full flex justify-center items-center'}>
-            <span className={'absolute text-xl text-white pt-10 z-[2] mx-auto top-0'}>Restaurant</span>
-            <span className={'absolute text-7xl my-auto mx-auto z-[2]'}><strong>F`1963</strong></span>
-            <span className={'absolute text-xl text-white bottom-0 pb-10 z-[2] mx-auto'}><strong>Busan</strong></span>
-            <div
-              className="bg-[url('/images/space1_bg_img2.jpg')] absolute h-full w-full z-1 bg-no-repeat bg-center bg-cover"></div>
+          <span className={'absolute text-xl text-white pt-10 z-[2] mx-auto top-0'}>Restaurant</span>
+          <span className={'absolute text-7xl my-auto mx-auto z-[2]'}><strong>F`1963</strong></span>
+          <span className={'absolute text-xl text-white bottom-0 pb-10 z-[2] mx-auto'}><strong>Busan</strong></span>
+          <div
+            className="bg-[url('/images/space1_bg_img2.jpg')] absolute h-full w-full z-1 bg-no-repeat bg-center bg-cover"></div>
         </div>
       </div>
       <div className={'py-44 flex justify-center text-black'}>
@@ -116,9 +114,9 @@ export default function Page() {
             ''
           }/>
           <p className={'pt-auto mt-10'}>
-              영업일&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;연중무휴<br/>
-              영업시간&nbsp;&nbsp;&nbsp; 매장별 상이<br/><a href="//instagram.com/boksoondoga" target="_blank">instagram
-              @boksoondoga</a>
+            영업일&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;연중무휴<br/>
+            영업시간&nbsp;&nbsp;&nbsp; 매장별 상이<br/><a href="//instagram.com/boksoondoga" target="_blank">instagram
+            @boksoondoga</a>
           </p>
         </div>
       </div>
