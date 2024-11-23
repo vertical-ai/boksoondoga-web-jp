@@ -7,17 +7,15 @@ export default function Page() {
     <div className={'flex flex-col bg-[#ffffe4]'}>
       <div
         className={`bg-[url('/images/about1_bg_img1_edit1.jpg')] bg-no-repeat bg-center bg-cover w-screen py-44`}>
-        <div className={'flex flex-col items-center justify-center'}>
-          <div className={'text-8xl font-bold text-white tracking-wide'}>
-            Crafting with Time and Dedication
-          </div>
-          <div className={'text-2xl items-center flex text-white mt-8'}>
-            <b>Creating makgeolli with motherly devotion -<br/>
-              this is Boksoondoga's core belief.<br/><br/>
+        <div className={'flex gap-5 justify-center'}>
+          <Image src={'/images/about1_title.png'} alt={'시간과 정성을 빚습니다'} width={400} height={400}/>
+          <div className={'text-2xl items-center flex '}>
+            <b>어머니의 마음으로 정성스러운 막걸리를 만드는 것,<br/>
+              바로 복순도가의 신념입니다.<br/><br/>
 
-              Following a mother's heart to give only the best,<br/>
-              we use only Korean-grown rice<br/>
-              following traditional methods,<br/>
+              항상 좋은 것만 주시려는 어머니의 마음을 따라<br/>
+              국산 쌀만을 사용하여 <br/>
+              전통 방식 그대로<br/>
               brewing in ancient earthenware jars.<br/><br/>
 
               The natural carbonation created by living yeast<br/>

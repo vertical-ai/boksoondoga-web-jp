@@ -7,11 +7,11 @@ export default function Page() {
     <div className={'flex flex-col bg-[#ffffe4]'}>
       <div
         className={`bg-[url('/images/about1_bg_img1_edit1.jpg')] bg-no-repeat bg-center bg-cover w-screen py-44`}>
-        <div className={'flex flex-col items-center justify-center'}>
-          <div className={'text-8xl font-bold text-white tracking-wide'}>
+        <div className={'flex gap-5 justify-center'}>
+          <div className={'text-6xl font-bold text-white'}>
             Crafting with Time and Dedication
           </div>
-          <div className={'text-2xl items-center flex text-white mt-8'}>
+          <div className={'text-2xl items-center flex text-white'}>
             <b>Creating makgeolli with motherly devotion -<br/>
               this is Boksoondoga's core belief.<br/><br/>
 
