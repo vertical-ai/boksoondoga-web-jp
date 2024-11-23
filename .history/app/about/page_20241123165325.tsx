@@ -74,7 +74,7 @@ export default function Page() {
         </div>
         <div>
           <p className={'pt-auto'}>
-            The brewery&apos;s eldest son, Min-gyu, reinterpreted the concept of fermentation<br/>
+            The brewery's eldest son, Min-gyu, reinterpreted the concept of fermentation<br/>
             from fermented drinks to architectural spaces, defining fermentation architecture as<br/>
             the process by which spaces become beneficial to humans.<br/><br/>
 
@@ -83,7 +83,7 @@ export default function Page() {
             These elements transcend their primary architectural purpose to harmonize with<br/>
             sound, video, and installation art, creating new performance objects.<br/><br/>
 
-            We created the brewery&apos;s interior and exterior spaces hoping that fermentation architecture<br/>
+            We created the brewery's interior and exterior spaces hoping that fermentation architecture<br/>
             would become a grand kiln containing time, matter, and circulation.<br/>
             Going forward, we will continue to capture how the architectural materials<br/>
             and structures within the brewery become increasingly meaningful to people over time.
