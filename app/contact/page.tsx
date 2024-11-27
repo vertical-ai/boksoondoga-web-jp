@@ -35,7 +35,7 @@ export default function Page() {
           message: 'Something went wrong. Please try again.'
         });
       }
-    } catch (error) {
+    } catch {
       setStatus({
         type: 'error',
         message: 'An error occurred. Please try again later.'
