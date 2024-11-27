@@ -26,19 +26,19 @@ export default function Page() {
       if (data.success) {
         setStatus({
           type: 'success',
-          message: 'Thank you for your message. We will get back to you soon!'
+          message: 'お問い合わせありがとうございます。追ってご連絡させていただきます。'
         });
         form.reset();
       } else {
         setStatus({
           type: 'error',
-          message: 'Something went wrong. Please try again.'
+          message: 'エラーが発生しました。もう一度お試しください。'
         });
       }
     } catch {
       setStatus({
         type: 'error',
-        message: 'An error occurred. Please try again later.'
+        message: '通信エラーが発生しました。時間をおいて再度お試しください。'
       });
     } finally {
       setIsSubmitting(false);
@@ -48,39 +48,39 @@ export default function Page() {
   return (
     <div className={'flex flex-col bg-[#ffffe4] pt-48 text-black px-36 min-h-screen'}>
       <div className={'flex flex-col gap-7 text-center border-b border-black pb-7 mb-7'}>
-        <h2 className={'text-6xl font-bold'}>Contact Us</h2>
+        <h2 className={'text-6xl font-bold'}>お問い合わせ</h2>
         <p className={'text-2xl'}>
-          We'd love to hear from you.<br/>
-          Get in touch with us for any inquiries.
+          お客様からのご連絡をお待ちしております。<br/>
+          ご質問やご要望などございましたら、お気軽にお問い合わせください。
         </p>
       </div>
 
       <div className="mt-20 grid grid-cols-2 gap-20 mb-32">
         <div className="space-y-12">
           <div className="bg-white/50 p-8 rounded-lg backdrop-blur-sm">
-            <h3 className={'text-2xl font-bold mb-4'}>General Inquiries</h3>
+            <h3 className={'text-2xl font-bold mb-4'}>一般的なお問い合わせ</h3>
             <p className={'text-lg text-[#666]'}>
-              For general questions about our products, services, or company:
+              商品、サービス、会社に関するお問い合わせ：
               <br/><br/>
-              Email: boksoondoga@gmail.com<br/>
-              Tel: +82-52-264-3539
+              メール：boksoondoga@gmail.com<br/>
+              電話：+82-52-264-3539
             </p>
           </div>
 
           <div className="bg-white/50 p-8 rounded-lg backdrop-blur-sm">
-            <h3 className={'text-2xl font-bold mb-4'}>Business Hours</h3>
+            <h3 className={'text-2xl font-bold mb-4'}>営業時間</h3>
             <p className={'text-lg text-[#666]'}>
-              Monday - Friday: 9:00 AM - 6:00 PM KST<br/>
-              Saturday - Sunday: Closed
+              月曜日～金曜日：9:00～18:00（韓国時間）<br/>
+              土曜日・日曜日：休業
             </p>
           </div>
 
           <div className="bg-white/50 p-8 rounded-lg backdrop-blur-sm">
-            <h3 className={'text-2xl font-bold mb-4'}>Location</h3>
+            <h3 className={'text-2xl font-bold mb-4'}>所在地</h3>
             <p className={'text-lg text-[#666]'}>
-              48, Hyangsandong-gil,<br/>
-              Sangbuk-myeon, Ulju-gun,<br/>
-              Ulsan, Korea
+              〒689-0000<br/>
+              韓国蔚山広域市蔚州郡<br/>
+              上北面香山洞길48
             </p>
           </div>
         </div>
@@ -106,50 +106,50 @@ export default function Page() {
             )}
 
             <div>
-              <label htmlFor="name" className="block text-sm font-medium mb-2">Name</label>
+              <label htmlFor="name" className="block text-sm font-medium mb-2">お名前</label>
               <input
                 type="text"
                 id="name"
                 name="name"
                 required
                 className="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-black/5 focus:border-black transition-colors"
-                placeholder="Your name"
+                placeholder="お名前をご入力ください"
               />
             </div>
 
             <div>
-              <label htmlFor="email" className="block text-sm font-medium mb-2">Email</label>
+              <label htmlFor="email" className="block text-sm font-medium mb-2">メールアドレス</label>
               <input
                 type="email"
                 id="email"
                 name="email"
                 required
                 className="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-black/5 focus:border-black transition-colors"
-                placeholder="your@email.com"
+                placeholder="example@email.com"
               />
             </div>
 
             <div>
-              <label htmlFor="subject" className="block text-sm font-medium mb-2">Subject</label>
+              <label htmlFor="subject" className="block text-sm font-medium mb-2">件名</label>
               <input
                 type="text"
                 id="subject"
                 name="subject"
                 required
                 className="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-black/5 focus:border-black transition-colors"
-                placeholder="What is this regarding?"
+                placeholder="お問い合わせの件名をご入力ください"
               />
             </div>
 
             <div>
-              <label htmlFor="message" className="block text-sm font-medium mb-2">Message</label>
+              <label htmlFor="message" className="block text-sm font-medium mb-2">お問い合わせ内容</label>
               <textarea
                 id="message"
                 name="message"
                 required
                 rows={6}
                 className="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-black/5 focus:border-black transition-colors"
-                placeholder="Your message here..."
+                placeholder="お問い合わせ内容をご入力ください"
               ></textarea>
             </div>
 
@@ -162,7 +162,7 @@ export default function Page() {
                   : 'hover:bg-gray-800 hover:shadow-md active:transform active:scale-[0.99]'
                 }`}
             >
-              {isSubmitting ? 'Sending...' : 'Send Message'}
+              {isSubmitting ? '送信中...' : '送信する'}
             </button>
           </form>
         </div>

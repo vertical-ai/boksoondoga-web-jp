@@ -9,9 +9,9 @@ export default function Page() {
         style={{ backgroundImage: "url('/images/space1_bg_img1.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }}
       >
         <div className="flex flex-col gap-5 items-center">
-          <div className="text-8xl items-center font-light tracking-wider">Brewery</div>
-          <div className="absolute top-[50px] text-xl">Brewery</div>
-          <div className="absolute bottom-[50px] text-xl">Ulsan</div>
+          <div className="text-8xl items-center font-light tracking-wider">醸造所</div>
+          <div className="absolute top-[50px] text-xl">醸造所</div>
+          <div className="absolute bottom-[50px] text-xl">蔚山</div>
         </div>
       </div>
 
@@ -19,23 +19,22 @@ export default function Page() {
       <div className="py-44 flex justify-center text-black">
         <div className="flex flex-col mr-24 max-w-2xl">
           <p className="text-lg leading-relaxed">
-            Located in Ulju-gun, Ulsan,<br/>
-            our brewery creates new sensibilities by bringing together<br/>
-            traditional foundations, natural fermentation culture,<br/>
-            and diverse people.<br/><br/>
+            蔚山広域市蔚州郡に位置する<br/>
+            私たちの醸造所は、伝統の基盤と<br/>
+            自然発酵文化、そして多様な人々が集まり、<br/>
+            新しい感性を生み出しています。<br/><br/>
             
-            The brewery is not just a building on the land,<br/>
-            but resonates with the land, the passing of time,<br/>
-            and the people who walk upon it,<br/>
-            expanding its breath across the earth.<br/><br/>
+            醸造所は単なる土地上の建物ではなく、<br/>
+            大地や時の流れ、そこを歩む人々と共鳴し、<br/>
+            その息吹を大地全体に広げていきます。<br/><br/>
 
-            The maturing alcohol and the brewery that houses it<br/>
-            breathe together, becoming a beacon illuminating the land.
+            熟成される酒と、それを育む醸造所は<br/>
+            共に呼吸し、大地を照らす灯となります。
           </p>
           <div className="mt-10 text-sm opacity-70">
             <div className="font-medium">1577 ㅡ 6746</div>
-            <div>50 Hyangsandong-gil, Sangbuk-myeon, Ulju-gun, Ulsan</div>
-            <div className="text-sm mt-2">Conveniently located near Ulsan KTX Station and West Ulsan IC.</div>
+            <div>〒689-0000 韓国蔚山広域市蔚州郡上北面香山洞길50</div>
+            <div className="text-sm mt-2">蔚山KTX駅・西蔚山ICから便利なアクセス</div>
           </div>
         </div>
         <div className="flex flex-col">
@@ -43,7 +42,7 @@ export default function Page() {
             src="/images/space2_br_img1.jpg" 
             width={600} 
             height={450} 
-            alt="Boksoondoga Brewery"
+            alt="福順都家醸造所"
             className="object-cover rounded-lg shadow-lg"
           />
         </div>
@@ -52,9 +51,9 @@ export default function Page() {
       {/* Restaurant Section */}
       <div className="flex justify-center text-white h-[600px]">
         <div className="relative w-full h-full flex justify-center items-center">
-          <span className="absolute text-xl text-white pt-10 z-[2] mx-auto top-0">Restaurant</span>
-          <span className="absolute text-7xl my-auto mx-auto z-[2]"><strong>F`1963</strong></span>
-          <span className="absolute text-xl text-white bottom-0 pb-10 z-[2] mx-auto"><strong>Busan</strong></span>
+          <span className="absolute text-xl text-white pt-10 z-[2] mx-auto top-0">レストラン</span>
+          <span className="absolute text-7xl my-auto mx-auto z-[2]"><strong>F1963</strong></span>
+          <span className="absolute text-xl text-white bottom-0 pb-10 z-[2] mx-auto"><strong>釜山</strong></span>
           <div
             className="absolute h-full w-full z-1 bg-no-repeat bg-center bg-cover"
             style={{ backgroundImage: "url('/images/space1_bg_img2.jpg')" }}
@@ -65,9 +64,9 @@ export default function Page() {
       {/* Store Section */}
       <div className="flex justify-center text-white h-[600px]">
         <div className="relative w-full h-full flex justify-center items-center">
-          <span className="absolute text-xl text-white pt-10 z-[2] mx-auto top-0">Shops</span>
-          <span className="absolute text-7xl my-auto mx-auto z-[2]"><strong>Stores</strong></span>
-          <span className="absolute text-xl text-white bottom-0 pb-10 z-[2] mx-auto"><strong>Domestic</strong></span>
+          <span className="absolute text-xl text-white pt-10 z-[2] mx-auto top-0">ショップ</span>
+          <span className="absolute text-7xl my-auto mx-auto z-[2]"><strong>店舗</strong></span>
+          <span className="absolute text-xl text-white bottom-0 pb-10 z-[2] mx-auto"><strong>国内</strong></span>
           <div
             className="absolute h-full w-full z-1 bg-no-repeat bg-center bg-cover"
             style={{ backgroundImage: "url('/images/space1_bg_img4.jpg')" }}
@@ -80,11 +79,11 @@ export default function Page() {
         <div className="flex flex-col mr-24 max-w-2xl">
           <div className="space-y-6">
             <p className="text-lg leading-relaxed">
-              Boksoondoga combines &apos;都&apos; (city) and &apos;家&apos; (home),<br/>
-              expressing our wish to connect urban and rural areas.<br/>
-              We operate stores at major train stations across regions.<br/>
-              Our station stores are welcoming faces of Boksoondoga,<br/>
-              greeting people traveling between cities and countryside.
+              福順都家の「都」（まち）と「家」（いえ）には、<br/>
+              都市と地方をつなぎたいという願いが込められています。<br/>
+              各地の主要駅に店舗を展開し、<br/>
+              都市と地方を行き交う人々を<br/>
+              福順都家の温かな表情でお迎えしています。
             </p>
           </div>
         </div>
@@ -93,15 +92,15 @@ export default function Page() {
             src="/images/space4_shop_img1.jpg" 
             width={600} 
             height={450} 
-            alt="Boksoondoga Store"
+            alt="福順都家店舗"
             className="object-cover rounded-lg shadow-lg"
           />
           <div className="mt-10 text-sm opacity-70">
             <div className="grid grid-cols-2 gap-2">
-              <span>Business Days</span>
-              <span>Open All Year</span>
-              <span>Hours</span>
-              <span>Varies by Location</span>
+              <span>営業日</span>
+              <span>年中無休</span>
+              <span>営業時間</span>
+              <span>店舗により異なります</span>
               <a 
                 href="//instagram.com/boksoondoga" 
                 target="_blank" 

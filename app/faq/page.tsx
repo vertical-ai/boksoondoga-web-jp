@@ -2,64 +2,64 @@ export default function Page() {
   return (
     <div className={'flex flex-col bg-[#ffffe4] pt-48 text-black px-36'}>
       <div className={'flex flex-col gap-7 text-center border-b border-black pb-7 mb-7'}>
-        <h2 className={'text-6xl font-bold'}>Support</h2>
+        <h2 className={'text-6xl font-bold'}>サポート</h2>
         <p className={'text-2xl'}>
-          For general inquiries and <b>bulk orders (corporate gifts)</b><br/>
-          Please call us for immediate assistance.
+          一般的なお問い合わせや<b>法人ギフト（まとめ買い）</b>について<br/>
+          お急ぎの方はお電話にてご連絡ください。
         </p>
       </div>
       <div className="mt-36">
         <div className={'mb-20'}>
-          <h3 className={'pb-4 border-b border-black mb-4'}>Shipping Schedule</h3>
+          <h3 className={'pb-4 border-b border-black mb-4'}>配送スケジュール</h3>
           <div className={'grid grid-cols-3 gap-4 text-[#666]'}>
             <p>
-              For same-day shipping, please place your order and complete payment by 2 PM. Orders placed after 2 PM on Friday through weekend (Sat/Sun) will be shipped sequentially on the following Monday.
+              当日発送をご希望の場合は、14時までにご注文・お支払いを完了してください。金曜日14時以降から週末（土日）のご注文は、翌月曜日より順次発送となります。
             </p>
             <p>
-              If you need delivery on a specific date, please request it through the delivery message option.
+              特定の日時指定配送をご希望の場合は、配送メッセージ欄にてご指定ください。
             </p>
             <p>
-              During high-volume periods, orders are processed sequentially. Shipping may be delayed depending on stock availability. Please consider potential schedule changes before placing your order.
+              繁忙期は順次発送となり、在庫状況により配送が遅れる場合がございます。スケジュールに余裕を持ってご注文いただきますようお願いいたします。
             </p>
           </div>
         </div>
         <div className={'mb-20'}>
-          <h3 className={'pb-4 border-b border-black mb-4'}>Returns / Exchanges / Refunds</h3>
+          <h3 className={'pb-4 border-b border-black mb-4'}>返品・交換・返金について</h3>
           <div className={'grid grid-cols-3 gap-4 text-[#666]'}>
             <p>
-              Exchanges and returns are possible within 7 days of receiving the product. For exchange or return requests, please contact our customer service (070.4144.4620) or send a message through our inquiry menu for prompt and accurate processing.
+              商品到着後7日以内で返品・交換が可能です。返品・交換をご希望の場合は、カスタマーサービス（070.4144.4620）またはお問い合わせフォームよりご連絡ください。迅速かつ正確な対応をさせていただきます。
             </p>
             <p>
-              For returns due to change of mind, customers must cover shipping costs (round-trip shipping for free delivery items). Exchanges and refunds are not possible if the product has been opened or damaged/deteriorated.
+              お客様都合による返品の場合、送料はお客様負担となります（送料無料商品の場合は往復送料）。商品開封後や商品の破損・劣化が見られる場合は、返品・交換をお受けできません。
             </p>
             <p>
-              For products with a shelf life of less than one month, please order carefully as contents may deteriorate.
+              賞味期限が1ヶ月未満の商品については、内容物の品質が変化する可能性がありますので、ご注文の際はご注意ください。
             </p>
           </div>
         </div>
         <div className={'grid grid-cols-3'}>
           <div className={'mb-20'}>
-            <h3 className={'pb-4 border-b border-black mb-4'}>Packaging and Storage</h3>
+            <h3 className={'pb-4 border-b border-black mb-4'}>包装・保管方法</h3>
             <div className={'text-[#666] pr-4'}>
               <p>
-                Boksoondoga products are safely delivered in styrofoam boxes with ice packs to maintain freshness. Please refrigerate immediately upon receipt!
+                福順都家の商品は、鮮度を保つため保冷剤入りの発泡スチロール箱で安全にお届けします。商品到着後は直ちに冷蔵保管してください！
               </p>
             </div>
           </div>
           <div className={'mb-20'}>
-            <h3 className={'pb-4 border-b border-black mb-4'}>How to Open Boksoondoga Makgeolli</h3>
+            <h3 className={'pb-4 border-b border-black mb-4'}>福順都家マッコリの開け方</h3>
             <div className={'text-[#666] pr-4'}>
               <p>
-                1. Turn the bottle upside down and shake well to mix the sediment, then place in freezer for 10 minutes. 2. Tilt almost horizontally and slowly open/close the cap 3-5 times. 3. After confirming the carbonation has been released, enjoy your drink.
+                1. ボトルを上下逆さにして沈殿物をよく混ぜ、冷凍庫で10分間冷やします。2. ボトルをほぼ水平に傾け、キャップをゆっくりと3～5回開け閉めします。3. 炭酸が抜けたことを確認してからお召し上がりください。
               </p>
             </div>
           </div>
           <div className={'mb-20'}>
-            <h3 className={'pb-4 border-b border-black mb-4'}>How to Best Enjoy</h3>
+            <h3 className={'pb-4 border-b border-black mb-4'}>美味しい飲み方</h3>
             <div className={'text-[#666]'}>
               <p>
-                Boksoondoga traditional alcohol offers various flavors depending on storage method and duration. Particularly, Boksoondoga Makgeolli becomes more refreshing at lower temperatures.<br/>
-                At higher temperatures, the refreshing quality decreases and acidity increases, so adjust the temperature according to your preference!
+                福順都家の伝統酒は、保管方法や期間によって様々な味わいをお楽しみいただけます。特に福順都家のマッコリは、低温で飲むとより爽やかな味わいになります。<br/>
+                温度が高くなると爽やかさが減少し酸味が増すため、お好みの温度に調整してお楽しみください！
               </p>
             </div>
           </div>
