@@ -14,10 +14,10 @@ export default function Home() {
           </video>
           <div
             className="absolute text-center z-4 left-1/2 top-1/2 text-white -translate-x-1/2 -translate-y-1/2 flex flex-col gap-4">
-            <strong className={'text-4xl'}>A beautiful white object<br/>that makes people sing,<br/>Boksoondoga Makgeolli</strong>
-            <p className={'block text-3xl text-black font-bold opacity-50'}>Pure.<br/>Non-pasteurized.<br/>Hand-brewed.</p>
+            <strong className={'text-4xl'}>人々の心を歌わせる<br/>美しい白いもの、<br/>福順都家マッコリ</strong>
+            <p className={'block text-3xl text-black font-bold opacity-50'}>純粋。<br/>非加熱。<br/>手作り。</p>
             <Link href="/"
-                  className={'inline-block mx-auto text-base text-white font-bold border border-white py-4 px-5 font-roboto-condensed'}>about</Link>
+                  className={'inline-block mx-auto text-base text-white font-bold border border-white py-4 px-5 font-roboto-condensed'}>詳しく見る</Link>
           </div>
         </div>
       </div>
@@ -45,7 +45,7 @@ export default function Home() {
             width={1920}
             height={1080}
             className={'absolute top-50 left-50 w-auto h-full object-cover min-w-[100vw] min-h-[100vh] z-[-1000] overflow-hidden'}
-            alt={'Boksoondoga traditional brewing'}/>
+            alt={'福順都家の伝統的な醸造方法'}/>
           <div
             className="absolute text-center z-4 left-1/2 top-1/2 text-white -translate-x-1/2 flex flex-col gap-4">
             <strong className={'text-4xl'}>生きた酵母のための饗宴。<br/>福順都家の伝統酒は<br/>伝統的な醸造方法を守ります。</strong>
@@ -64,7 +64,7 @@ export default function Home() {
             width={1920}
             height={1080}
             className={'absolute top-50 left-50 w-auto h-full object-cover min-w-[100vw] min-h-[100vh] z-[-1000] overflow-hidden'}
-            alt={'Boksoondoga brewing experience'}/>
+            alt={'福順都家の醸造体験'}/>
           <div
             className="absolute text-center z-4 left-1/2 top-1/2 text-white -translate-x-1/2 flex flex-col gap-4">
             <strong className={'text-4xl'}>手作りマッコリの<br/>味わいを体験する。</strong>
